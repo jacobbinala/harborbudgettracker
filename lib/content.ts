@@ -78,7 +78,7 @@ export const projects = {
     {
       title: "Ride-N-Go Transport Website",
       year: "2025",
-      href: "ride-n-go.ca",
+      href: "https://ride-n-go.ca/",
       hrefLabel: "ride-n-go.ca",
       bullets: [
         "Designed and developed a full business website for a transport company using Next.js",
