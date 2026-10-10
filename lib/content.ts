@@ -167,6 +167,16 @@ export const experience = {
   title: "Experience",
   items: [
     {
+      role: "Web Developer / Website Manager",
+      org: "Ride-N-Go Transport",
+      dates: "2025",
+      bullets: [
+        "Designed, developed, and maintained the official company website (Next.js) and a database management system (React + Firebase Firestore) to streamline business operations",
+        "Managed site updates, optimized web performance, and ensured database stability and data integrity",
+        "Built responsive layouts and interactive features to improve user engagement and access to transport services",
+      ],
+    },
+    {
       role: "IT Support & Graphic Design Intern",
       org: "Mariano Marcos State University, Philippines",
       dates: "Dec 2023 – Nov 2024",
