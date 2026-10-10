@@ -44,7 +44,33 @@ export function Hero() {
             GitHub
           </a>
         </div>
+        <a
+          href="/resume.pdf"
+          download="resume.pdf"
+          className="link-underline text-sm text-foreground mt-4 inline-block flex items-center gap-2"
+        >
+          Resume
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            fill="none"
+            viewBox="0 0 20 20"
+            aria-hidden="true"
+            className="inline-block"
+          >
+            <path
+              d="M10 3v10m0 0l-3.5-3.5M10 13l3.5-3.5M4 17h12"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </a>
       </div>
+
+   
     </section>
   );
 }

@@ -31,6 +31,13 @@ export function Footer() {
             >
               {site.phoneDisplay}
             </a>
+            <a
+              href="/resume.pdf"
+              download="resume.pdf"
+              className="link-underline w-fit text-foreground"
+            >
+              Resume
+            </a>
           </div>
         </div>
         <nav
