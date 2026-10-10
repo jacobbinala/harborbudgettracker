@@ -4,6 +4,8 @@ Harbor is a personal budget tracker. It shows what came in, what went out, and w
 
 Amounts are stored in this browser and displayed in US dollars. The first visit opens with three months of sample activity so the dashboard is already readable. You can replace that with your own entries, restore the sample, or clear everything.
 
+![Harbor dashboard showing October income, expenses, net savings, spending by category, and six months of cashflow](docs/dashboard.png)
+
 ## Features
 
 - **Dashboard.** Total income, total expenses, and net savings for the selected month, with a comparison to the month before. A donut chart breaks spending down by category. A bar chart compares income and expenses across the six months ending in the month you are viewing.

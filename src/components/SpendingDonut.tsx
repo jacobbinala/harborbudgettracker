@@ -48,8 +48,8 @@ export function SpendingDonut({ slices, total }: Props) {
   }
 
   return (
-    <div className="grid items-center gap-4 sm:grid-cols-[minmax(0,220px)_minmax(0,1fr)]">
-      <div ref={ref} className="relative mx-auto h-56 w-full max-w-56" aria-hidden="true">
+    <div className="grid min-w-0 items-center gap-5">
+      <div ref={ref} className="relative mx-auto h-52 w-full max-w-[200px] overflow-hidden" aria-hidden="true">
         {ready ? (
           <PieChart width={width} height={height} margin={{ top: 0, right: 0, bottom: 0, left: 0 }}>
             <Pie
@@ -78,13 +78,13 @@ export function SpendingDonut({ slices, total }: Props) {
           <span className="display money text-xl">{formatMoney(total)}</span>
         </div>
       </div>
-      <ul className="space-y-2">
+      <ul className="min-w-0 space-y-2">
         {slices.map((slice) => (
-          <li key={slice.id} className="flex items-center gap-3 text-sm">
+          <li key={slice.id} className="flex min-w-0 items-center gap-3 text-sm">
             <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: slice.fill }} aria-hidden="true" />
             <span className="min-w-0 flex-1 truncate">{slice.name}</span>
             <span className="shrink-0 text-[var(--muted)]">{formatShare(slice.share)}</span>
-            <span className="money w-24 shrink-0 text-right">{formatMoney(slice.value)}</span>
+            <span className="money shrink-0 text-right">{formatMoney(slice.value)}</span>
           </li>
         ))}
       </ul>

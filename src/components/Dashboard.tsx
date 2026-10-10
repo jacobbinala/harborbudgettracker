@@ -47,13 +47,13 @@ export function Dashboard({ month, onAdd, onEdit, onDelete, onViewAll }: Props) 
 
       <StatCards month={month} totals={totals} previous={previous} />
 
-      <div className="grid gap-4 xl:grid-cols-5">
-        <section className="card p-5 xl:col-span-2">
+      <div className="grid min-w-0 gap-4 xl:grid-cols-5">
+        <section className="card min-w-0 p-5 xl:col-span-2">
           <h2 className="text-lg font-semibold">Spending by category</h2>
           <p className="mb-4 text-sm text-[var(--muted)]">{monthLabel}</p>
           <SpendingDonut slices={slices} total={totals.expenses} />
         </section>
-        <section className="card p-5 xl:col-span-3">
+        <section className="card min-w-0 p-5 xl:col-span-3">
           <h2 className="text-lg font-semibold">Income and expenses</h2>
           <p className="mb-2 text-sm text-[var(--muted)]">Six months ending {monthLabel}</p>
           <CashflowChart series={series} caption={`Income and expenses, ${windowLabel}`} />

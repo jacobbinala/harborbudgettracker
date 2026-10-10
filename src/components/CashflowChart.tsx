@@ -49,7 +49,7 @@ export function CashflowChart({ series, caption }: Props) {
     <div>
       {hasActivity ? (
         <>
-          <div ref={ref} className="h-64 w-full min-w-0" aria-hidden="true">
+          <div ref={ref} className="h-64 w-full min-w-0 overflow-hidden" aria-hidden="true">
             {ready ? (
               <BarChart
                 width={width}
@@ -107,7 +107,8 @@ export function CashflowChart({ series, caption }: Props) {
               Expenses
             </span>
           </div>
-          <table className="sr-only">
+          <div className="visually-hidden">
+          <table>
             <caption>{caption}</caption>
             <thead>
               <tr>
@@ -126,6 +127,7 @@ export function CashflowChart({ series, caption }: Props) {
               ))}
             </tbody>
           </table>
+          </div>
         </>
       ) : (
         <p className="py-10 text-center text-[var(--muted)]">No income or expenses in this six-month window.</p>
