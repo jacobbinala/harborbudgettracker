@@ -1,6 +1,6 @@
-const currency = new Intl.NumberFormat('en-US', {
+const currency = new Intl.NumberFormat('en-CA', {
   style: 'currency',
-  currency: 'USD',
+  currency: 'CAD',
 });
 
 export function roundMoney(value: number): number {

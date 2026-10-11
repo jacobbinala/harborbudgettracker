@@ -1,8 +1,8 @@
 # Harbor
 
-Harbor is a personal budget tracker. It shows what came in, what went out, and what you kept — month by month — without an account or a server.
+Harbor is a personal budget tracker. It shows what came in, what went out, and what you kept month by month without an account or a server.
 
-Amounts are stored in this browser and displayed in US dollars. The first visit opens with three months of sample activity so the dashboard is already readable. You can replace that with your own entries, restore the sample, or clear everything.
+Amounts are stored in this browser and displayed in Canadian dollars. The first visit opens with three months of sample activity so the dashboard is already readable. You can replace that with your own entries, restore the sample, or clear everything.
 
 ![Harbor dashboard showing October income, expenses, net savings, spending by category, and six months of cashflow](docs/dashboard.png)
 
